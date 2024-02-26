@@ -8,12 +8,12 @@ load_dotenv()
 
 
 api_key = os.getenv("MISTRAL_API_KEY")
-model = "mistral-small-latest"
+model = "open-mixtral-8x7b"
 
 client = MistralClient(api_key=api_key)
 
 messages = [
-    ChatMessage(role="user", content="What is Machine Learning?")
+    ChatMessage(role="user", content="Daniel picks up the football. Daniel drops the newspaper. Daniel picks up the milk. John took the apple. What is Daniel holding?")
 ]
 
 # No streaming
